@@ -1,6 +1,6 @@
 'use strict';
 
-let bayon = require('bayon');
+let bayon = require('bayon-core');
 let app = bayon({
     root: __dirname
 });
