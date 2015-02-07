@@ -1,0 +1,30 @@
+{
+  "name": "BayonJS",
+  "version": "0.0.1",
+  "description": "NodeJS MVC Framework",
+  "main": "./bootstrap/startup.js",
+  "scripts": {
+    "start": "node --harmony index.js",
+    "debug": "./node_modules/.bin/nodemon --harmony index.js",
+    "dev": "./node_modules/.bin/nodemon --harmony index.js -e development",
+    "test": "./node_modules/.bin/mocha --harmony --check-leaks --reporter list"
+  },
+  "keywords": [
+    "Harmony",
+    "MVC",
+    "Framework"
+  ],
+  "author": "Joden-Lay",
+  "license": "MIT",
+  "dependencies": {
+    "bayon": "~/projects/bayon"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4",
+    "nodemon": "^1.2.1"
+  },
+  "subdomain": "bayon",
+  "engines": {
+    "node": "0.11.13"
+  }
+}

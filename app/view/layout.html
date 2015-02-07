@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}Bayon{% endblock %}</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    {% block styles %}{% endblock %}
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">BayonJS</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#top"></a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <p class="fa fa-home fa-1x"></p>Home</a>
+                    </li>
+                    <li>
+                        <a href="/demo">
+                            <p class="fa fa-play-circle fa-1x"></p>Demo</a>
+                    </li>
+                    <li>
+                        <a href="/document">
+                            <p class="fa fa-book fa-1x"></p>Documentation</a>
+                    </li>
+                    <li>
+                        <a href="/api">
+                            <p class="fa fa-code fa-1x"></p>API References</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/">
+                            <p class="fa fa-github fa-1x"></p>GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+
+</html>
