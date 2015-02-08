@@ -1,34 +1,44 @@
 {
-  "name": "BayonJS",
-  "version": "0.0.1",
-  "description": "NodeJS MVC Framework",
-  "main": "./bootstrap/startup.js",
-  "scripts": {
-    "start": "iojs index.js",
-    "node": "node --harmony index.js",
-    "debug": "./node_modules/.bin/nodemon --harmony index.js",
-    "dev": "./node_modules/.bin/nodemon --harmony index.js -e development",
-    "test": "./node_modules/.bin/mocha --harmony --check-leaks --reporter list"
-  },
-  "engines": {
-    "iojs": "1.x.x"
-  },
-  "keywords": [
-    "Harmony",
-    "MVC",
-    "Framework"
-  ],
-  "author": "Joden-Lay",
-  "license": "MIT",
-  "dependencies": {
-    "bayon-core": "^0.0.1"
-  },
-  "devDependencies": {
-    "mocha": "^1.21.4",
-    "nodemon": "^1.2.1"
-  },
-  "subdomain": "bayon",
-  "engines": {
-    "node": "0.11.13"
-  }
+    "name": "BayonJS",
+    "version": "0.0.1",
+    "description": "A server side JavaScript MVC framework that support ECMAScript 6",
+    "main": "./index.js",
+    "scripts": {
+        "start": "iojs index.js",
+        "node": "node --harmony index.js",
+        "debug": "./node_modules/.bin/nodemon --harmony index.js",
+        "dev": "./node_modules/.bin/nodemon --harmony index.js -e development",
+        "test": "./node_modules/.bin/mocha --harmony --check-leaks --reporter list"
+    },
+    "engines": {
+        "iojs": "1.x.x"
+    },
+    "keywords": [
+        "Harmony",
+        "iojs",
+        "nodejs",
+        "bayon",
+        "bayonjs",
+        "server",
+        "ECMAScript",
+        "MVC",
+        "Framework"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Joden-Lay/bayon-core"
+    },
+    "bugs": {
+        "url": "https://github.com/Joden-Lay/bayon-core/issues"
+    },
+    "author": "Joden Lay <joden.lay@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "bayon-core": "^0.0.1"
+    },
+    "devDependencies": {
+        "mocha": "^1.21.4",
+        "nodemon": "^1.2.1"
+    },
+    "subdomain": "bayon"
 }

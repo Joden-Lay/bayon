@@ -4,9 +4,10 @@
 {% block content %}
 <!-- Header -->
 <header id="top" class="header">
+    <div class="header-overlay"></div>
     <div class="text-vertical-center banner-text">
         <h1>BayonJS</h1>
-        <h3>Say goodbye to node.js callback hell</h3>
+        <h3>Say goodbye to callback hell</h3>
         <a href="#about" class="btn btn-primary btn-lg">Download</a>
     </div>
 </header>
@@ -16,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>The node.js mvc framework that built with ECMAScript 6 standard</h2>
+                <h2>A JavaScript server side MVC framework that support ECMAScript 6</h2>
                 <p class="lead"></p>
             </div>
         </div>
@@ -34,44 +35,54 @@
                 <h2>Build based on</h2>
                 <hr class="small">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <img src="img/iojs.png"/>
+                            </span>
+                            <h4><strong>JavaScript I/O</strong></h4>
+                            <p>A JavaScript platform built on Chrome's V8 runtime. This project began as a fork of Joyent's Node.js™</p>
+                            <a href="https://iojs.org/" class="btn btn-primary btn-md">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <img src="img/express.png"/>
+                            </span>
+                            <h4><strong>Express</strong></h4>
+                            <p>Fast, unopinionated, minimalist web framework for Node.js</p>
+                            <a href="http://expressjs.com/" class="btn btn-primary btn-md">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
                         <div class="service-item">
                             <span class="fa-stack fa-4x">
                                 <img src="img/es6.png"/>
                             </span>
                             <h4><strong>ECMAScript 6</strong></h4>
                             <p>Code support generator function route handler</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm" class="btn btn-primary btn-md">Learn More</a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <img src="img/socketio-logo.png"/>
+                            </span>
+                            <h4><strong>Socket.IO</strong></h4>
+                            <p>Socket.IO enables real-time bidirectional event-based communication.</p>
+                            <a href="http://socket.io/" class="btn btn-primary btn-md">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
                         <div class="service-item">
                             <span class="fa-stack fa-4x">
                                 <img src="img/sequelize.png"/>
                             </span>
                             <h4><strong>SequelizeJS</strong></h4>
                             <p>Featuring the fastest and most reliable real-time engine</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                                <img src="img/express.png"/>
-                            </span>
-                            <h4><strong>Express</strong></h4>
-                            <p>Express middleware route handling</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                                <img src="img/socketio-logo.png"/>
-                            </span>
-                            <h4><strong>Socket.IO</strong></h4>
-                            <p>Real-time application with Socket.IO</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <a href="http://sequelizejs.com/" class="btn btn-primary btn-md">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -102,18 +113,7 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h4><strong>BayonJS</strong></h4>
-                <p>Phnom Penh
-                    <br>Cambodia</p>
-                <ul class="list-unstyled">
-                    <li>
-                        <i class="fa fa-phone fa-fw"></i> (855)97 8888-151
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope-o fa-fw"></i>
-                        <a href="mailto:eanglay@hotmail.com">eanglay@hotmail.com</a>
-                    </li>
-                </ul>
-                <br>
+                <br />
                 <ul class="list-inline">
                     <li>
                         <a target="_blank" href="https://www.facebook.com/eang.lay.7">
@@ -125,8 +125,33 @@
                             <i class="fa fa-twitter fa-fw fa-3x"></i>
                         </a>
                     </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Joden-Lay">
+                            <i class="fa fa-github fa-fw fa-3x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fa fa-envelope-o fa-fw"></i>
+                        <a href="mailto:joden.lay@gmail.com">joden.lay@gmail.com</a>
+                    </li>
                 </ul>
                 <hr class="small">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://github.com/Joden-Lay/bayon/">Project</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Joden-Lay/bayon/">Issues</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Joden-Lay/bayon/">Change Logs</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Joden-Lay/bayon/">Wiki</a>
+                    </li>
+                </ul>
                 <p class="text-muted">
                     Copyright &copy; Joden Lay 2014
                 </p>

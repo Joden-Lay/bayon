@@ -1,6 +1,10 @@
-BayonJS
-===
+Bayon
+=================
 
+Bayon is a node.js MVC framework based on expressjs and implemented in ECMAScript Harmony standard.
+
+Get Started
+-----------
 ```js
 
 'use strict';
@@ -11,7 +15,7 @@ module.exports = Home;
 // Define class
 function Home() {};
 
-Home.index = function(req, res) {
+Home.index = function() {
     this.send(200, 'Hello World!');
 };
 

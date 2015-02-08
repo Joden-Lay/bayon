@@ -3,7 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
 /* Global Styles */
 
 html,
@@ -11,49 +10,59 @@ body {
     width: 100%;
     height: 100%;
 }
+
 body {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .text-vertical-center {
-    display: table-cell;
+    display: block;
     text-align: center;
-    vertical-align: bottom;
-    padding-bottom: 60px;
+    position: relative;
+    padding-top: 300px;
 }
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
 }
+
 .btn-lg {
     padding: 12px 26px;
     font-size: 20px;
 }
+
 .btn-primary {
     background-color: #666699;
     border-color: #9999CC;
 }
+
 .btn-primary:hover {
     background-color: #333366;
     border-color: #666699;
 }
+
 .btn-dark {
     border-radius: 0;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 .btn-light {
     border-radius: 0;
     color: #333;
     background-color: rgb(255, 255, 255);
 }
+
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
@@ -82,6 +91,7 @@ hr.small {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
@@ -102,31 +112,38 @@ hr.small {
         font-size: 1.5em;
     }
 }
+
 .navbar {
     padding: 0 10px;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
+
 .navbar a:focus {
     outline: 0;
 }
+
 .navbar .navbar-nav {
     letter-spacing: 1px;
 }
+
 .navbar .navbar-nav li a:focus {
     outline: 0;
 }
+
 .navbar-default,
 .navbar-inverse {
     border: 0;
 }
+
 #menu-toggle {
     z-index: 1;
     position: fixed;
     top: 0;
     right: 0;
 }
+
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
@@ -136,16 +153,18 @@ hr.small {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
 .toggle {
     margin: 5px 5px 0 0;
 }
 /* Header */
 
 .header {
-    display: table;
+    display: block;
     position: relative;
     width: 100%;
     height: 100%;
+    display: inline-block;
     background: url(../img/bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -162,8 +181,12 @@ hr.small {
 .services {
     padding: 50px 0;
 }
+
 .service-item {
     margin-bottom: 30px;
+}
+.service-item p{
+    min-height: 130px;
 }
 /* Callout */
 
@@ -183,12 +206,15 @@ hr.small {
 .portfolio {
     padding: 50px 0;
 }
+
 .portfolio-item {
     margin-bottom: 30px;
 }
+
 .img-portfolio {
     margin: 0 auto;
 }
+
 .img-portfolio:hover {
     opacity: 0.8;
 }
@@ -197,6 +223,7 @@ hr.small {
 .call-to-action {
     padding: 50px 0;
 }
+
 .call-to-action .btn {
     margin: 10px;
 }
@@ -205,6 +232,7 @@ hr.small {
 .map {
     height: 500px;
 }
+
 @media(max-width:768px) {
     .map {
         height: 75%;
@@ -215,26 +243,33 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
 .banner-text h1 {
-    color: #996633;
+    color: #996710;
 }
+
 .banner-text h3 {
-    color: #FFFFFF;
+    color: #FFF;
 }
+
 .service-item span img {
     width: 120px;
     height: 120px;
     padding: 10px;
 }
+
 .bg-primary {
     background-color: #CC9966;
 }
+
 .navbar-default .navbar-nav>li>a {
     font-size: large;
 }
+
 .skip-top-menu {
     margin-top: 60px;
 }
+
 h1,
 .h1,
 h2,
@@ -242,4 +277,12 @@ h2,
 h3,
 .h3 {
     margin-top: 10px;
+}
+
+.header-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    background-color: #000;
 }
