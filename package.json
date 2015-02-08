@@ -4,7 +4,8 @@
   "description": "NodeJS MVC Framework",
   "main": "./bootstrap/startup.js",
   "scripts": {
-    "start": "node --harmony index.js",
+    "start": "iojs index.js",
+    "node": "node --harmony index.js",
     "debug": "./node_modules/.bin/nodemon --harmony index.js",
     "dev": "./node_modules/.bin/nodemon --harmony index.js -e development",
     "test": "./node_modules/.bin/mocha --harmony --check-leaks --reporter list"
@@ -17,7 +18,7 @@
   "author": "Joden-Lay",
   "license": "MIT",
   "dependencies": {
-    "bayon": "~/projects/bayon"
+    "bayon-core": "^0.0.1"
   },
   "devDependencies": {
     "mocha": "^1.21.4",
