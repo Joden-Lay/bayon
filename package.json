@@ -10,6 +10,9 @@
     "dev": "./node_modules/.bin/nodemon --harmony index.js -e development",
     "test": "./node_modules/.bin/mocha --harmony --check-leaks --reporter list"
   },
+  "engines": {
+    "iojs": "1.x.x"
+  },
   "keywords": [
     "Harmony",
     "MVC",
