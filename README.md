@@ -50,3 +50,8 @@ Greeting.talk = function() {
 };
 
 ```
+
+
+License
+-----------
+[MIT](LICENSE)
