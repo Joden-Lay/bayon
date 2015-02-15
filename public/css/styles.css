@@ -115,7 +115,6 @@ hr.small {
 
 .navbar {
     padding: 0 10px;
-    text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
@@ -245,11 +244,11 @@ footer {
 }
 
 .banner-text h1 {
-    color: #996710;
+    color: #FFF;
 }
 
 .banner-text h3 {
-    color: #FFF;
+    color: #F8F8F8;
 }
 
 .service-item span img {
